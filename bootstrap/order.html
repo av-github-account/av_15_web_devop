@@ -8,157 +8,132 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container py-4">
-        <!-- Шапка -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <a href="../index.html" class="header-title text-decoration-none text-dark">
-                    <h2 class="m-0">Ламповый магазин</h2>
-                </a>
-            </div>
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="contacts.html" class="text-decoration-none text-dark"><h3 class="m-0">КОНТАКТЫ</h3></a>
-            </div>
-            <div class="col-md-4 d-flex align-items-center justify-content-end">
-                <a href="order.html" class="order-btn">
-                    <strong>ОФОРМИТЬ ЗАКАЗ</strong>
-                </a>
-            </div>
-        </div>
-
-        <h1 class="mb-4">Оформление заказа</h1>
-
-        <!-- Таблица товаров -->
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <table class="order-table">
-                    <thead>
-                        <tr>
-                            <th style="width: 50%">Наименование</th>
-                            <th style="width: 15%">Цена, руб</th>
-                            <th style="width: 15%">Кол-во</th>
-                            <th style="width: 20%">Ст-ть</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Лампочка 20 W / E14</td>
-                            <td>250</td>
-                            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Лампочка 20 W / E14</td>
-                            <td>300</td>
-                            <td><input type="number" class="quantity-input" value="10" min="0"></td>
-                            <td class="text-success">3 000</td>
-                        </tr>
-                        <tr>
-                            <td>Лампочка 25 W / E20</td>
-                            <td>100</td>
-                            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Лампочка 20 W / E14</td>
-                            <td>250</td>
-                            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Лампочка 20 W / E14</td>
-                            <td>250</td>
-                            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Лампочка 20 W / E14</td>
-                            <td>90</td>
-                            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Лампочка 20 W / E14</td>
-                            <td>250</td>
-                            <td><input type="number" class="quantity-input" value="20" min="0"></td>
-                            <td class="text-success">5 000</td>
-                        </tr>
-                        <tr>
-                            <td>Лампочка 20 W / E14</td>
-                            <td>300</td>
-                            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Лампочка 20 W / E14</td>
-                            <td>20</td>
-                            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Лампочка 20 W / E14</td>
-                            <td>250</td>
-                            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-                            <td>0</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="order-summary text-end">
-                    <hr>
-                    <h5>Заказ: 2 sku</h5>
-                    <h5>Количество: 30 шт</h5>
-                    <h5>Стоимость заказа: 8 000 руб</h5>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Ламповый магазин</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="order.html" class="btn btn-outline-dark me-2">Корзина</a>
+                    <a href="login.html" class="btn btn-outline-primary">Вход</a>
                 </div>
-
-                <!-- Форма заказа -->
-                <h3 class="mb-4">Для оформления заказа заполните форму:</h3>
-                
-                <form class="order-form">
-                    <div class="mb-3 row">
-                        <label class="col-sm-3 col-form-label text-end">Имя:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    
-                    <div class="mb-3 row">
-                        <label class="col-sm-3 col-form-label text-end">e-mail:</label>
-                        <div class="col-sm-9">
-                            <input type="email" class="form-control">
-                        </div>
-                    </div>
-                    
-                    <div class="mb-3 row">
-                        <label class="col-sm-3 col-form-label text-end">телефон:</label>
-                        <div class="col-sm-9">
-                            <input type="tel" class="form-control">
-                        </div>
-                    </div>
-                    
-                    <div class="mb-3 row">
-                        <label class="col-sm-3 col-form-label text-end">адрес доставки:</label>
-                        <div class="col-sm-9">
-                            <textarea class="form-control" rows="4"></textarea>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-3 row">
-                        <div class="col-sm-9 offset-sm-3">
-                            <button type="submit" class="btn btn-primary btn-lg">оформить заказ</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
+    </nav>
 
-        <!-- Футер -->
+    <!-- Основное содержимое -->
+    <div class="container my-5">
+        <h1 class="page-title">Оформление заказа</h1>
+        
         <div class="row">
-            <div class="col-12 text-center">
-                <p class="footer-text">2025. Ламповый магазин - лучший магазин из всех магазинов.</p>
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Товары в заказе</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="order-item">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>Лампочка 20 W / E14</h6>
+                                </div>
+                                <div class="col-2 text-end">
+                                    <span>250 руб.</span>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" class="form-control" value="10" min="1">
+                                </div>
+                                <div class="col-2 text-end">
+                                    <span class="text-success">2 500 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-item">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>Лампочка 25 W / E20</h6>
+                                </div>
+                                <div class="col-2 text-end">
+                                    <span>300 руб.</span>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" class="form-control" value="1" min="1">
+                                </div>
+                                <div class="col-2 text-end">
+                                    <span class="text-success">300 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Для оформления заказа заполните форму:</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3 row">
+                                <label for="name" class="col-sm-3 col-form-label">Имя:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="email" class="col-sm-3 col-form-label">E-mail:</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="phone" class="col-sm-3 col-form-label">Телефон:</label>
+                                <div class="col-sm-9">
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="address" class="col-sm-3 col-form-label">Адрес доставки:</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" id="address" rows="3" required></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card order-summary">
+                    <h5 class="card-title">Итого</h5>
+                    <div class="mb-3">
+                        <p>Заказ: 2 товара</p>
+                        <p>Количество: 11 шт</p>
+                        <p class="h4">Стоимость заказа: <span class="text-primary">2 800 руб.</span></p>
+                    </div>
+                    <a href="confirm.html" class="btn btn-primary btn-lg w-100">Оформить заказ</a>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>2025. Ламповый магазин - лучший магазин из всех магазинов.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

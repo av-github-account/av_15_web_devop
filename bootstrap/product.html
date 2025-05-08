@@ -8,53 +8,64 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container py-4">
-        <!-- Шапка -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <a href="../index.html" class="header-title text-decoration-none text-dark">
-                    <h2 class="m-0">Ламповый магазин</h2>
-                </a>
-            </div>
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="contacts.html" class="text-decoration-none text-dark"><h3 class="m-0">КОНТАКТЫ</h3></a>
-            </div>
-            <div class="col-md-4 d-flex align-items-center justify-content-end">
-                <a href="order.html" class="order-btn">
-                    <strong>ОФОРМИТЬ ЗАКАЗ</strong>
-                </a>
-            </div>
-        </div>
-
-        <!-- Карточка товара -->
-        <div class="row product-container">
-            <div class="col-md-6">
-                <div class="product-image">
-                    <img src="../img/lamp.jpg" class="img-fluid" alt="Лампочка 20 W / E14">
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Ламповый магазин</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="order.html" class="btn btn-outline-dark me-2">Корзина</a>
+                    <a href="login.html" class="btn btn-outline-primary">Вход</a>
                 </div>
             </div>
+        </div>
+    </nav>
+
+    <!-- Основное содержимое -->
+    <div class="container my-5">
+        <h1 class="page-title">Карточка товара</h1>
+        
+        <div class="row">
             <div class="col-md-6">
-                <h1 class="product-title">Лампочка 20 W / E14</h1>
-                <div class="product-price">250 рублей</div>
-                <a href="order.html" class="btn btn-primary btn-lg">Добавить в корзину</a>
+                <img src="../img/lamp.jpg" class="img-fluid rounded" alt="Лампочка 20 W / E14">
+            </div>
+            <div class="col-md-6">
+                <h2>Лампочка 20 W / E14</h2>
+                <p class="h3 text-primary mb-4">250 рублей</p>
                 
-                <div class="product-description mt-5">
+                <div class="mb-4">
                     <h4>Описание:</h4>
                     <p>Мощность: 20w</p>
                     <p>Цоколь: E14</p>
                     <p>Энергосберегающая.</p>
                     <p>Лампочка производится на заводе "Лампочка Ильича".</p>
                 </div>
-            </div>
-        </div>
-
-        <!-- Футер -->
-        <div class="row">
-            <div class="col-12 text-center">
-                <p class="footer-text">2025. Ламповый магазин - лучший магазин из всех магазинов.</p>
+                
+                <div class="d-flex align-items-center mb-4">
+                    <input type="number" class="form-control me-3" value="1" min="1" style="width: 80px;">
+                    <button class="btn btn-primary btn-lg">Добавить в корзину</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>2025. Ламповый магазин - лучший магазин из всех магазинов.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

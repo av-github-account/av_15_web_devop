@@ -1,3 +1,8 @@
-/_мусор
-/av_lamp
+_мусор/
+av_lamp/
 1.py
+.DS_Store
+
+# git rm -r --cached папка_или_файл  # удаляет из индекса, но сохраняет на диске
+# git commit -m "Удаляю папку из Git (добавлено в .gitignore)"
+# git push

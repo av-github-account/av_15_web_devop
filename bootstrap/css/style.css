@@ -1,146 +1,74 @@
-/* Базовые стили */
+/* Общие стили */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
 }
 
-/* Общие стили для карточек и блоков */
-.card-style {
-    border: 2px solid #1e1e1e;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    transition: transform 0.3s;
-}
-
-.card-style:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* Стили для текста */
-.text-medium {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.text-large {
-    font-size: 20px;
-}
-
-.text-xlarge {
-    font-size: 24px;
-}
-
-.text-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-/* Стили для кнопок и интерактивных элементов */
-.interactive-element {
-    padding: 8px 15px;
-    border-radius: 8px;
-    display: inline-block;
-}
-
-/* Специфические компоненты */
-.header-title {
-    @extend .card-style;
-    background-color: #ffec99;
-    padding: 10px;
-}
-
-.order-btn {
-    @extend .interactive-element;
-    background-color: #e9ecef;
-    border: 2px solid #868e96;
-    color: #1e1e1e;
-}
-
-.order-btn:hover {
-    background-color: #dee2e6;
-}
-
-.lamp-card {
-    @extend .card-style;
-    height: 100%;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.lamp-img-placeholder {
-    height: 206px;
-    background-color: transparent;
-    border-bottom: 2px solid #1e1e1e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.lamp-img-placeholder img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-}
-
-.lamp-title {
-    padding: 10px;
-    @extend .text-large;
+.navbar-brand {
     font-weight: bold;
 }
 
-.footer-text {
-    @extend .text-large;
-    margin: 30px 0;
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
-/* Специфические страницы */
-.product-image {
-    @extend .card-style;
-    padding: 10px;
-}
-
-.product-price {
-    @extend .text-xlarge;
-    color: #2f9e44;
+.product-card {
     margin-bottom: 30px;
+    transition: transform 0.3s;
 }
 
-.order-table {
-    width: 100%;
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    height: 200px;
+    object-fit: contain;
+}
+
+.page-title {
     margin-bottom: 30px;
-    
-    th {
-        font-weight: bold;
-        @extend .text-large;
-        padding: 10px;
-        border-bottom: 2px solid #1e1e1e;
-    }
-    
-    td {
-        padding: 10px;
-        vertical-align: middle;
-        border-bottom: 1px solid #dee2e6;
-    }
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
 }
 
-.quantity-input {
-    width: 70px;
-    text-align: center;
-    padding: 5px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
+/* Стили для страницы оформления заказа */
+.order-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.order-summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Стили для админки */
+.admin-nav {
+    background-color: #343a40;
+    min-height: 100vh;
+    color: white;
+}
+
+.admin-nav a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.admin-nav a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 /* Адаптивные стили */
 @media (max-width: 768px) {
-    .header-title, .order-btn {
-        text-align: center;
-        margin-bottom: 10px;
+    .admin-nav {
+        min-height: auto;
     }
     
-    .lamp-img-placeholder {
+    .product-img {
         height: 150px;
     }
 }

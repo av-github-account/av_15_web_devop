@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container py-4">
+        <h1 class="text-center">Оформление заказа</h1>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Вы выбрали лампочку. Пожалуйста, укажите количество для заказа:</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Количество</label>
+                        <input type="number" class="form-control" id="quantity" name="quantity" value="1" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Интернет-магазин</p>
+    </footer>
+</body>
+</html>
+    

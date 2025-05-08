@@ -1,0 +1,15 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+}
+footer small {
+    color: #555;
+}
+.lamp-img {
+    max-height: 240px;
+    object-fit: contain;
+}
+input[type="number"] {
+    width: 70px;
+}

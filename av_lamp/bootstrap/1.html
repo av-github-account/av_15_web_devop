@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ламповый магазин - Оформление заказа</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .header-contacts {
+            text-align: center;
+        }
+        
+        .checkout-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        .order-summary {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        
+        .order-summary p {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .order-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Ламповый магазин</div>
+            <div class="header-contacts">КОНТАКТЫ</div>
+            <button class="checkout-btn">ОФОРМИТЬ ЗАКАЗ</button>
+        </header>
+        
+        <h1>Оформление заказа</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Наименование</th>
+                    <th>Цена, руб.</th>
+                    <th>Кол-во</th>
+                    <th>Ст-ть</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>250</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>300</td>
+                    <td>10</td>
+                    <td>3 000</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 25 м / Е20</td>
+                    <td>100</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>40</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>250</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>250</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>250</td>
+                    <td>20</td>
+                    <td>5 000</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>300</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>20</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>250</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>250</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td><label for="quantity">Количество (от 1 до 10, шаг 0.5):</label>
+                        <input type="number" id="quantity" name="quantity" 
+                               min="1" max="10" step="0.5" value="1"></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>250</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Лампочка 20 м / Е14</td>
+                    <td>250</td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="order-summary">
+            <p><strong>Заказ:</strong> 2 sku</p>
+            <p><strong>Количество:</strong> 30 шт</p>
+            <p><strong>Стоимость заказа:</strong> 8 000 руб</p>
+        </div>
+        
+        <h2>Для оформления заказа заполните форму:</h2>
+        
+        <form class="order-form">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">e-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">адрес доставки:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">оформить заказ</button>
+        </form>
+        
+        <footer>
+            2025. Ламповый магазин – лучший магазин из всех магазинов.
+        </footer>
+    </div>
+</body>
+</html>

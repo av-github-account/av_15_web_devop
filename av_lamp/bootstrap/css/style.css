@@ -1,0 +1,68 @@
+/* Основные стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Стили для карточек товаров */
+.card {
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Стили для страницы оформления заказа */
+.order-table th {
+    background-color: #f8f9fa;
+}
+
+.order-summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Стили для страницы 404 */
+.error-page {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+    
+    .error-code {
+        font-size: 80px;
+    }
+}

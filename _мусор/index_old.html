@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин лучших лампочек</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .contacts {
+            font-size: 14px;
+        }
+        .cart-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product-card {
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #f1f1f1;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Лучшие лампочки</div>
+        <a href="#">Контакты</a>
+        <button class="cart-button">Корзина (0)</button>
+    </header>
+
+
+    <section class="products">
+        <div class="product-card">
+            <div class="product-image"></div>
+            <h3>Лампа "Яркая"</h3>
+            <p>Мощность: 60Вт</p>
+            <p>Цена: 299 руб.</p>
+            <button>Добавить в корзину</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image"></div>
+            <h3>Лампа "Эконом"</h3>
+            <p>Мощность: 40Вт</p>
+            <p>Цена: 199 руб.</p>
+            <button>Добавить в корзину</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image"></div>
+            <h3>Лампа "Премиум"</h3>
+            <p>Мощность: 75Вт</p>
+            <p>Цена: 499 руб.</p>
+            <button>Добавить в корзину</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image"></div>
+            <h3>Лампа "Светлая"</h3>
+            <p>Мощность: 50Вт</p>
+            <p>Цена: 249 руб.</p>
+            <button>Добавить в корзину</button>
+        </div>
+    </section>
+
+
+    <footer>
+        2025 - В нашем магазине продаются 25 лучших лампочек в мире!
+    </footer>
+</body>
+</html>
